@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Water Tracker</string>
+    <string name="water_tracker">Water Tracker</string>
+    <string name="add_250ml">Add 1L</string>
+    <string name="tap_to_add_water">Tap to add water</string>
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="water_intake">Water Intake</string>
+    <string name="todays_intake">Today\'s Intake</string>
+    <string name="add_water">Add Water</string>
+    <string name="decrease_water">Decrease Water</string>
+    <string name="no_records">No records available</string>
+    <string name="recent_records">Recent Records</string>
+    <string name="liter_format">%.2f L</string>
+    <string name="widget_added">Widget added to home screen</string>
+    <string name="water_added">Water added: 1L</string>
+    <string name="widget_description">Quickly add water intake with a single tap</string>
+    <string name="widget_configure">Configure Water Tracker Widget</string>
+</resources>

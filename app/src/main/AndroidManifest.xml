@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.watertracker">
+
+    <application
+        android:name="com.tatav.watertracker.WaterTrackerApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WaterTracker">
+
+        <activity
+            android:name="com.tatav.watertracker.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.WaterTracker">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Widget Configuration -->
+        <receiver
+            android:name="com.tatav.watertracker.WaterIntakeWidget"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.example.watertracker.ACTION_ADD_WATER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/water_intake_widget_info" />
+        </receiver>
+    </application>
+</manifest>
